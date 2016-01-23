@@ -21,6 +21,7 @@
                                     <thead>
                                         <tr>
                                             <th>Tanggal Transaksi</th>
+                                            <th>No Faktur</th>
                                             <th>Kode Barang</th>
                                             <th>Jumlah</th>
                                             <th>Nama Barang</th>
@@ -32,6 +33,7 @@
                                     <?php foreach ($arrayData as $key => $value) { ?>
                                     <tr>
                                         <td><?php echo $value->tanggal ?></td>
+                                        <td><?php echo $value->id ?></td>
                                         <td><?php echo $value->kode_barang ?></td>
                                         <td><?php echo $value->jumlah ?></td>
                                         <td><?php echo $value->nama_barang ?></td>

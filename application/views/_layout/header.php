@@ -56,7 +56,7 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
-                <li><a href="<?php echo base_url() ?>barang/laporan_transaksi "><i class="fa fa-sign-out fa-fw"></i> Laporan</a></li>
+                <li><a href="<?php echo base_url() ?>barang/laporan_transaksi "><i class="fa fa-book fa-fw"></i> Laporan</a></li>
 				<li><a href="<?php echo base_url() ?>auth/logout "><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
             </ul>
             <!-- /.navbar-top-links -->
@@ -65,22 +65,22 @@
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
                         <li>
-                            <a href="<?php echo base_url() ?>barang/list_barang"><i class="fa fa-edit fa-fw"></i> Tabel Stok Barang</a>
+                            <a href="<?php echo base_url() ?>barang/list_barang"><i class="fa fa-table fa-fw"></i> Tabel Stok Barang</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url() ?>barang/masuk"><i class="fa fa-edit fa-fw"></i> Barang Masuk</a>
+                            <a href="<?php echo base_url() ?>barang/masuk"><i class="fa fa-inbox fa-fw"></i> Barang Masuk</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url() ?>barang/keluar"><i class="fa fa-edit fa-fw"></i> Barang Keluar</a>
+                            <a href="<?php echo base_url() ?>barang/keluar"><i class="fa fa-share fa-fw"></i> Barang Keluar</a>
                         </li>
                         <li>
                             <a href="<?php echo base_url() ?>pelanggan/input"><i class="fa fa-edit fa-fw"></i> Input Pelanggan</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url() ?>pelanggan/list_pelanggan"><i class="fa fa-edit fa-fw"></i> List Pelanggan</a>
+                            <a href="<?php echo base_url() ?>pelanggan/list_pelanggan"><i class="fa fa-table fa-fw"></i> List Pelanggan</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url() ?>anggota_kelompok/index"><i class="fa fa-edit fa-fw"></i> Anggota Kelompok</a>
+                            <a href="<?php echo base_url() ?>anggota_kelompok/index"><i class="fa fa-users fa-fw"></i> Anggota Kelompok</a>
                         </li>
                         <li class="sidebar-search">
                             <img src="<?php echo base_url() ?>asset/logo.jpeg" width="100%" alt="">
