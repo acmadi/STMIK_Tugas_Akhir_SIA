@@ -10,36 +10,43 @@
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="col-md-offset-5 col-md-3">
-                        <div class="panel panel-default">
-                             <div class="panel-body">
-                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas itaque, ut eaque impedit, sequi natus expedita quasi quaerat tenetur iste sunt voluptate et aliquid eligendi voluptatibus dolore deleniti doloribus, distinctio.
-                    </div>
+                    <h3>Anggota Kelompok Tugas Akhir Sia</h3>
                     <div class="col-md-3">
                         <div class="panel panel-default">
                              <div class="panel-body">
+                                DIKY MITZA PRATAMA 151200043
                              </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="panel panel-default">
                              <div class="panel-body">
+DWINTA AMORA            151200066
+
                              </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="panel panel-default">
                              <div class="panel-body">
+                             FAJAR ARIF SETIAWAN        151200072
+
                              </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="panel panel-default">
                              <div class="panel-body">
+                             MARSALINA <br>        151200077
+
+                             </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+                             <div class="panel-body">
+                             WANDRI EKA PUTRA       151200073
+
                              </div>
                         </div>
                     </div>
