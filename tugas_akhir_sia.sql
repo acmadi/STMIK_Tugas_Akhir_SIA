@@ -15,10 +15,9 @@ CREATE TABLE `barang` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `barang` (`kode_barang`, `nama_barang`, `jumlah_barang`, `harga_satuan`) VALUES
-('BRG001',	'Parfum Pewangi Ruangan',	20,	5000),
-('BRG003',	'Baju Anak',	380,	30000),
-('BRG004',	'Kebutuhan Dapur',	40,	300000),
-('BRG006',	'Sepeda Motor',	1160,	5000000000);
+('BRG001',	'Parfum Pewangi Ruangan',	2,	10000),
+('BRG002',	'Laptop',	19,	30000),
+('BRG003',	'Sepeda Motor',	9,	24000000);
 
 DROP TABLE IF EXISTS `pegawai`;
 CREATE TABLE `pegawai` (
@@ -32,14 +31,16 @@ CREATE TABLE `pegawai` (
 
 DROP TABLE IF EXISTS `pelanggan`;
 CREATE TABLE `pelanggan` (
-  `kode_pelanggan` varchar(5) NOT NULL,
+  `kode_pelanggan` varchar(10) NOT NULL,
   `nama_pelanggan` varchar(100) NOT NULL,
+  `no_identitas` varchar(100) NOT NULL,
+  `no_telp` varchar(100) NOT NULL,
+  `alamat` varchar(100) NOT NULL,
   PRIMARY KEY (`kode_pelanggan`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-INSERT INTO `pelanggan` (`kode_pelanggan`, `nama_pelanggan`) VALUES
-('1',	'0'),
-('2',	'Wandri Eka Putra');
+INSERT INTO `pelanggan` (`kode_pelanggan`, `nama_pelanggan`, `no_identitas`, `no_telp`, `alamat`) VALUES
+('PL0003',	'Diky Mitza Pratama',	'0123',	'0813757234',	'Filano');
 
 DROP TABLE IF EXISTS `transaksi`;
 CREATE TABLE `transaksi` (
@@ -49,7 +50,7 @@ CREATE TABLE `transaksi` (
   `tanggal` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   `jumlah` int(11) NOT NULL,
   `total_harga` double NOT NULL,
-  `kode_pelanggan` varchar(5) NOT NULL,
+  `kode_pelanggan` varchar(10) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `pelanggan_id` (`kode_pelanggan`),
   KEY `kode_barang` (`kode_barang`),
@@ -57,10 +58,9 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `transaksi` (`id`, `no_faktur`, `kode_barang`, `tanggal`, `jumlah`, `total_harga`, `kode_pelanggan`) VALUES
-(10,	'',	'BRG003',	'0000-00-00 00:00:00',	20,	600000,	'0'),
-(11,	'',	'BRG006',	'0000-00-00 00:00:00',	100,	500000000000,	''),
-(12,	'',	'BRG006',	'0000-00-00 00:00:00',	100,	500000000000,	''),
-(13,	'',	'BRG001',	'0000-00-00 00:00:00',	40,	200000,	'');
+(15,	'1',	'BRG001',	'0000-00-00 00:00:00',	5,	50000,	'PL000'),
+(16,	'1',	'BRG001',	'2016-01-22 17:00:00',	3,	30000,	'PL000'),
+(17,	'1',	'BRG002',	'2016-01-22 17:00:00',	1,	30000,	'PL0003');
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -73,4 +73,4 @@ CREATE TABLE `user` (
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
 (2,	'root',	'63a9f0ea7bb98050796b649e85481845');
 
--- 2016-01-23 05:11:34
+-- 2016-01-23 14:15:35
