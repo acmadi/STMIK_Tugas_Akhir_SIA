@@ -57,7 +57,7 @@ class Auth extends CI_Controller {
 				'username' => $auth->username,
 			);
 			$this->session->set_userdata('logged_in', $session_data);
-			redirect('home','refresh');
+			redirect('barang/list_barang','refresh');
 		}else{
 			$data = array(
 				'error' => 'Invalid Username or Password'
