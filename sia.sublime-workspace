@@ -1,0 +1,977 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"if",
+				"if?	$… = ( … ) ? … : …"
+			],
+			[
+				"fo",
+				"foreach	foreach …"
+			],
+			[
+				"query",
+				"queryBanyakHasil"
+			],
+			[
+				"mode",
+				"model_utama"
+			],
+			[
+				"cek",
+				"cekSession"
+			],
+			[
+				"laod_",
+				"load_model	CI - Load Model"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"load",
+				"load_model	CI - Load Model"
+			],
+			[
+				"re",
+				"req	require …"
+			],
+			[
+				"page",
+				"page_route"
+			],
+			[
+				"incl",
+				"incl	include …"
+			],
+			[
+				"con",
+				"con	function __construct"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"Sc",
+				"Schema::table-update	Update an existing table"
+			],
+			[
+				"tex",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "application/controllers/Welcome.php",
+			"settings":
+			{
+				"buffer_size": 863,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/home.php",
+			"settings":
+			{
+				"buffer_size": 329,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/home/home.php",
+			"settings":
+			{
+				"buffer_size": 251,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/_layout/footer.php",
+			"settings":
+			{
+				"buffer_size": 1127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/kode_perkiraan.php",
+			"settings":
+			{
+				"buffer_size": 758,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/.htaccess",
+			"settings":
+			{
+				"buffer_size": 123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 9805,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/input/perkiraan.php",
+			"settings":
+			{
+				"buffer_size": 4550,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/_layout/header.php",
+			"settings":
+			{
+				"buffer_size": 3288,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/model_init.php",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/controllers/auth.php",
+			"settings":
+			{
+				"buffer_size": 1782,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/auth/login.php",
+			"settings":
+			{
+				"buffer_size": 4118,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "asset/dist/css/bajo.css",
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n\n    <meta charset=\"utf-8\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"author\" content=\"\">\n\n    <title>SB Admin 2 - Bootstrap Admin Theme</title>\n\n    <!-- Bootstrap Core CSS -->\n    <link href=\"<?php echo base_url(); ?>asset/bower_components/bootstrap/dist/css/bootstrap.min.css\" rel=\"stylesheet\">\n\n    <!-- MetisMenu CSS -->\n    <link href=\"<?php echo base_url(); ?>asset/bower_components/metisMenu/dist/metisMenu.min.css\" rel=\"stylesheet\">\n\n    <!-- Custom CSS -->\n    <link href=\"<?php echo base_url(); ?>asset/dist/css/sb-admin-2.css\" rel=\"stylesheet\">\n    <link href=\"<?php echo base_url(); ?>asset/dist/css/bajo.css\" rel=\"stylesheet\">\n\n    <!-- Custom Fonts -->\n    <link href=\"<?php echo base_url(); ?>asset/bower_components/font-awesome/css/font-awesome.min.css\" rel=\"stylesheet\" type=\"text/css\">\n\n    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->\n    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->\n    <!--[if lt IE 9]>\n        <script src=\"https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js\"></script>\n        <script src=\"https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js\"></script>\n    <![endif]-->\n\n</head>\n\n<body>\n\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-4 col-md-offset-4\">\n                \n                <?php if(isset($error)){ ?>\n                <div class=\"alert alert-danger alert-dismissable jarak-atas-50\">\n                    <button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">×</button>\n                    Maaf Username atau Password salah.  Jika belum terdaftar silahkan daftar lewat link berikut <a href=\"<?php echo base_url() ?>auth/register\" class=\"alert-link\">Daftar</a>.\n                </div>\n                <?php } ?>\n                <div class=\"login-panel panel panel-default\">\n\n                    <div class=\"panel-heading\">\n                        <h3 class=\"panel-title\">Login Form</h3>\n                    </div>\n                    <div class=\"panel-body\">\n                        <form role=\"form\" method=\"post\" action=\"<?php echo base_url() ?>auth/post_login\">\n                            <fieldset>\n                                <div class=\"form-group\">\n                                    <input class=\"form-control\" placeholder=\"username\" name=\"username\" type=\"username\" autofocus>\n                                </div>\n                                <div class=\"form-group\">\n                                    <input class=\"form-control\" placeholder=\"passwros\" name=\"password\" type=\"password\" value=\"\">\n                                </div>\n                                \n                                <!-- Change this to a button or input when using this as a form -->\n                                <button class=\"btn btn-lg btn-success btn-block\">Login</button>\n                            </fieldset>\n                        </form>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <!-- jQuery -->\n    <script src=\"<?php echo base_url(); ?>asset/bower_components/jquery/dist/jquery.min.js\"></script>\n\n    <!-- Bootstrap Core JavaScript -->\n    <script src=\"<?php echo base_url(); ?>asset/bower_components/bootstrap/dist/js/bootstrap.min.js\"></script>\n\n    <!-- Metis Menu Plugin JavaScript -->\n    <script src=\"<?php echo base_url(); ?>asset/bower_components/metisMenu/dist/metisMenu.min.js\"></script>\n\n    <!-- Custom Theme JavaScript -->\n    <script src=\"<?php echo base_url(); ?>asset/dist/js/sb-admin-2.js\"></script>\n\n</body>\n\n</html>\n",
+			"file": "application/views/login.php",
+			"file_size": 3794,
+			"file_write_time": 130961427740000000,
+			"settings":
+			{
+				"buffer_size": 3793,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/views/auth/register.php",
+			"settings":
+			{
+				"buffer_size": 3752,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/models/model_utama.php",
+			"settings":
+			{
+				"buffer_size": 939,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/config/routes.php",
+			"settings":
+			{
+				"buffer_size": 1966,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/config/autoload.php",
+			"settings":
+			{
+				"buffer_size": 3935,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 272.0,
+		"last_filter": "php",
+		"selected_items":
+		[
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 592.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Applications/MAMP/htdocs/sia",
+		"/Applications/MAMP/htdocs/sia/application",
+		"/Applications/MAMP/htdocs/sia/application/controllers",
+		"/Applications/MAMP/htdocs/sia/application/models",
+		"/Applications/MAMP/htdocs/sia/application/views",
+		"/Applications/MAMP/htdocs/sia/application/views/_layout",
+		"/Applications/MAMP/htdocs/sia/application/views/home",
+		"/Applications/MAMP/htdocs/sia/application/views/input"
+	],
+	"file_history":
+	[
+		"/Applications/MAMP/htdocs/sia/application/views/dashboard/home.php",
+		"/Applications/MAMP/htdocs/sia/index.php",
+		"/Applications/MAMP/htdocs/sia/application/models/initial_model.php",
+		"/Applications/MAMP/htdocs/sia/application/controllers/control_init.php",
+		"/Applications/MAMP/htdocs/sia/application/models/model_auth.php",
+		"/Applications/MAMP/htdocs/sia/application/views/welcome.php",
+		"/Applications/MAMP/htdocs/sia/application/config/database.php",
+		"/Applications/MAMP/htdocs/sia/asset/dist/css/bajo.css",
+		"/Applications/MAMP/htdocs/sia/application/config/autoload.php",
+		"/Applications/MAMP/htdocs/sia/application/config/config.php",
+		"/Applications/MAMP/htdocs/sia/application/models/default_model.php",
+		"/Applications/MAMP/htdocs/codeigniter/.htaccess",
+		"/Applications/MAMP/htdocs/codeigniter/application/config/config.php",
+		"/Applications/MAMP/htdocs/codeigniter/application/controllers/Welcome.php",
+		"/Users/bajochero/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Applications/MAMP/htdocs/material/css/materialize.css",
+		"/Applications/MAMP/htdocs/cms-sia/index.php",
+		"/Applications/MAMP/htdocs/cms-sia/contr/home.php",
+		"/Applications/MAMP/htdocs/cms-sia/contr/controller.php",
+		"/Applications/MAMP/htdocs/cms-sia/engine/view.php",
+		"/Applications/MAMP/htdocs/cms-sia/route.php",
+		"/Applications/MAMP/htdocs/cms-sia/engine/koneksi.php",
+		"/Applications/MAMP/htdocs/cms-sia/engine/loader-route.php",
+		"/Applications/MAMP/htdocs/cms-sia/engine/db.php",
+		"/Users/bajochero/Library/Preferences/Nik Software/Color Efex Pro 4/ColorEfexPro4.cfg",
+		"/Applications/MAMP/htdocs/ta-sia/.env",
+		"/Applications/MAMP/htdocs/bnn-tamplate/bnn.sublime-project",
+		"/Users/bajochero/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"../",
+			"href=\"../",
+			"dashboard",
+			"<?php echo base_url; ?>asset/",
+			"<?php echo base_url; ?>/asset/",
+			"../",
+			"\n	",
+			"lang"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<?php echo base_url(); ?>asset/",
+			"href=\"<?php echo base_url(); ?>asset/",
+			"<?php echo base_url(); ?>asset/",
+			"<?php echo base_url; ?>/asset/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "application/controllers/Welcome.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								758,
+								758
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/controllers/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 329,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								207
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "application/views/home/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 251,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/views/_layout/footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1127,
+								1127
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/controllers/kode_perkiraan.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 758,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								662,
+								662
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "application/.htaccess",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2276,
+								2276
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "application/views/input/perkiraan.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4550,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								746,
+								760
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": false
+						},
+						"translation.x": 36.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "application/views/_layout/header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3035,
+								3035
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 551.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "application/models/model_init.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								248
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "application/controllers/auth.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								426,
+								426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 63.0,
+						"translation.y": 14.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "application/views/auth/login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4118,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2265,
+								2265
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 4.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "asset/dist/css/bajo.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								52,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "application/views/login.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3793,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								674,
+								674
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "application/views/auth/register.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1483,
+								1483
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "application/models/model_utama.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 939,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								637,
+								637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 71.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "application/config/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1894,
+								1894
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 71.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "application/config/autoload.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3935,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3931,
+								3931
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1196.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sia.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
