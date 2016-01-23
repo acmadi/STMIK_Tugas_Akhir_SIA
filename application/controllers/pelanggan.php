@@ -20,20 +20,25 @@ class Pelanggan extends CI_Controller {
 	{
 		$kode_pelanggan = $this->input->post('kode_pelanggan');
 		$nama_pelanggan = $this->input->post('nama_pelanggan');
+		$no_identitas = $this->input->post('no_identitas');
+		$no_telp = $this->input->post('no_telp');
+		$alamat = $this->input->post('alamat');
 		
 		if ($kode_pelanggan != '' && $nama_pelanggan !='') {
 			$cek = $this->model_utama->querySatuHasil("select * from pelanggan where kode_pelanggan = '$kode_pelanggan'");
 			if($cek != null){
-				return $this->list_pelanggan();
+				echo "string";
+				// return $this->list_pelanggan();
 			}else{
-				$exec = $this->model_utama->queryinsert("insert into pelanggan (kode_pelanggan, nama_pelanggan)  value ('$kode_pelanggan', '$nama_pelanggan')");
+				$exec = $this->model_utama->queryinsert("insert into pelanggan (kode_pelanggan, nama_pelanggan, no_identitas, no_telp, alamat)  value ('$kode_pelanggan', '$nama_pelanggan', '$no_identitas', '$no_telp', '$alamat')");
 			}
 		}
 
 		if($exec){
 			return $this->list_pelanggan();
 		}
-		return $this->list_pelanggan();
+		echo "string1";
+		// return $this->list_pelanggan();
 	}
 
 	public function delete_input()
@@ -45,9 +50,9 @@ class Pelanggan extends CI_Controller {
 		}
 
 		if($exec){
-			return $this->input();
+			return $this->list_pelanggan();
 		}
-		return $this->input();
+		return $this->list_pelanggan();
 	}
 
 }

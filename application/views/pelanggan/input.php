@@ -19,15 +19,33 @@
                                 <div class="col-lg-12">
                                     <form role="form" method="post" class="form-horizontal" action="<?php echo base_url() ?>pelanggan/post_input ">
                                         <div class="form-group">
-                                            <label class="control-label col-sm-4">Kode Pelanggan</label>
+                                            <label class="control-label col-sm-4">ID Pelanggan</label>
                                             <div class="col-md-8">
-                                                <input class="form-control" name="kode_pelanggan"  placeholder="Kode Pelanggan">
+                                                <input class="form-control" name="kode_pelanggan"  placeholder="ID Pelanggan">
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label col-sm-4">Nama Pelanggan</label>
                                             <div class="col-md-8">
                                                 <input class="form-control" name="nama_pelanggan" placeholder="Nama Pelanggan">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-4">No. Identitas</label>
+                                            <div class="col-md-8">
+                                                <input class="form-control" name="no_identitas" placeholder="No Identitas Pelanggan">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-4">No. Telp/HP</label>
+                                            <div class="col-md-8">
+                                                <input class="form-control" name="no_telp" placeholder="No Telp">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-4">Alamat</label>
+                                            <div class="col-md-8">
+                                                <textarea class="form-control" name="alamat" placeholder="Alamat Pelanggan"></textarea>
                                             </div>
                                         </div>
                                         <div class="padding-right ">

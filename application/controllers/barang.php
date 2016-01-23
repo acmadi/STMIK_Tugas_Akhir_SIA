@@ -50,7 +50,7 @@ class Barang extends CI_Controller {
 	public function list_barang()
 	{
 		$this->model_utama->cekSession();
-		$query = 'select * from barang';
+		$query = 'select barang.nama_barang, barang.kode_barang, barang.jumlah_barang, barang.harga_satuan, sum(jumlah) as jumlah_terjual from barang left join transaksi on transaksi.kode_barang = barang.kode_barang group by barang.kode_barang';
 		$this->model_init->view('barang/barang-list', 'List Barang', $query);
 	}
 
@@ -78,9 +78,17 @@ class Barang extends CI_Controller {
 		$total_harga = $this->input->post('total_harga');
 		$kode_pelanggan = $this->input->post('kode_pelanggan');
 
+		$cek = $this->model_utama->querySatuHasil("select *, max(id) as maxi from transaksi");
+		if ($cek===null) {
+			$no_faktur = '0000brg1';
+		}else{
+			$no_faktur = '0000brg'.$cek->maxi+1;
+		}
+
+		$tanggal = date('Y-m-d');
 		$sisa = $this->input->post('jumlah_barang') - $jumlah;
 
-		$query = "insert into transaksi (kode_barang, jumlah, total_harga, kode_pelanggan) value ('".$barang_id."','".$jumlah."','".$total_harga."','".$kode_pelanggan."')";
+		$query = "insert into transaksi (kode_barang, no_faktur, jumlah, total_harga, kode_pelanggan, tanggal) value ('".$barang_id."','".$no_faktur."','".$jumlah."','".$total_harga."','".$kode_pelanggan."','".$tanggal."')";
 		$update = "update barang SET jumlah_barang = '".$sisa."' WHERE kode_barang = '".$barang_id."'";
 		$this->model_utama->queryinsert($update);
 		$this->model_utama->queryinsert($query);
@@ -90,7 +98,7 @@ class Barang extends CI_Controller {
 	public function laporan_transaksi($value='')
 	{
 		$this->model_utama->cekSession();
-		$query = 'select * from transaksi';
+		$query = 'select * from transaksi, barang where transaksi.kode_barang = barang.kode_barang';
 		$this->model_init->view('barang/transaksi-list', 'List transaksi', $query);
 	}
 

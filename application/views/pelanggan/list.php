@@ -22,6 +22,9 @@
                                         <tr>
                                             <th>Kode Barang</th>
                                             <th>Nama Barang</th>
+                                            <th>No. Identitas</th>
+                                            <th>No Telp</th>
+                                            <th>Alamat</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -30,6 +33,9 @@
                                     <tr>
                                             <td><?php echo $value->kode_pelanggan ?></td>
                                             <td><?php echo $value->nama_pelanggan?> </td>
+                                            <td><?php echo $value->no_identitas?> </td>
+                                            <td><?php echo $value->no_telp?> </td>
+                                            <td><?php echo $value->alamat?> </td>
                                             <td><a href="<?php echo base_url() ?>pelanggan/delete_input?kode_pelanggan=<?php echo $value->kode_pelanggan ?> ">Delete</a></td>
                                         </tr>
                                     <?php } ?>

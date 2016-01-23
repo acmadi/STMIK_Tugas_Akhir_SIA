@@ -12,7 +12,7 @@
                 <div class="col-md-offset-3 col-lg-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Input Perkiraan Akuntansi
+                            Input Barang Masuk
                         </div>
                         <div class="panel-body">
                             <div class="row">

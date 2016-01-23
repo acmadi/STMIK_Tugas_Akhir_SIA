@@ -13,7 +13,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Tabel Perkiraan Akuntansi
+                            List Stok Barang
                         </div>
                         <div class="panel-body">
                             <div class="dataTable_wrapper">
@@ -22,8 +22,9 @@
                                         <tr>
                                             <th>Kode Barang</th>
                                             <th>Nama Barang</th>
-                                            <th>Jumlah Barang</th>
                                             <th>Harga Satuan</th>
+                                            <th>Sisa Barang</th>
+                                            <th>Barang Terjual</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -32,8 +33,10 @@
                                     <tr>
                                             <td><?php echo $value->kode_barang ?></td>
                                             <td><?php echo $value->nama_barang?> </td>
-                                            <td><?php echo $value->jumlah_barang ?></td>
                                             <td><?php echo $value->harga_satuan ?></td>
+                                            <td><?php echo $value->jumlah_barang ?></td>
+                                            <td><?php echo $value->jumlah_terjual ?></td>
+
                                             <td><a href="<?php echo base_url() ?>barang/delete_input?kode_barang=<?php echo $value->kode_barang ?> ">Delete</a></td>
                                         </tr>
                                     <?php } ?>
