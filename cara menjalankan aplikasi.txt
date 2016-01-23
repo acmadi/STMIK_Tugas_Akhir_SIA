@@ -1,0 +1,4 @@
+cara menjalankan aplikasi:
+1. buat database dengan nama "tugas_akhir_sia"
+2. import data tugas_akhir_sia.sql ke database
+3. akses file dengan alamat http://localhost/sia

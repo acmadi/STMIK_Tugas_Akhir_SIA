@@ -26,6 +26,21 @@ class Auth extends CI_Controller {
 		$this->load->view('auth/register');
 	}
 
+	public function post_register($value='')
+	{
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+
+		if ($username != '' && $password!= '') {
+			$password = md5($password);
+			$exec = $this->model_utama->queryinsert("insert into tugas_akhir_sia.user (username, password) value ('$username', '$password')");
+		}
+
+		if ($exec) {
+			$this->index();
+		}
+	}
+
 	public function post_login()
 	{
 		if (!$this->input->post()) {
@@ -40,8 +55,6 @@ class Auth extends CI_Controller {
 		if ($auth != false) {
 			$session_data = array(
 				'username' => $auth->username,
-				'email' => $auth->email,
-				'role' => $auth->role
 			);
 			$this->session->set_userdata('logged_in', $session_data);
 			redirect('home','refresh');

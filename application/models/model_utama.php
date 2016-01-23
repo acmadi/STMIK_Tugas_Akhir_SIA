@@ -16,12 +16,30 @@ class Model_utama extends CI_Model {
 			return  NULL;
 	}
 
+	public function queryToJson($tquery='')
+	{
+		# code...
+		$query = $this->db->query($tquery);
+		if($query)
+		{
+			$array = $query->result();
+			return json_encode($array);
+        }
+        else
+			return  NULL;
+	}
+
 	public function queryinsert($tquery='')
 	{
 		$query = $this->db->query($tquery);
 		if ($query) {
 			return true;
 		}
+	}
+
+	public function queryUpdate($value='')
+	{
+		$sql = "";
 	}
 
 	public function cekSession()

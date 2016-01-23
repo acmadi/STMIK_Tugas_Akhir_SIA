@@ -45,15 +45,11 @@
                         <h3 class="panel-title">Daftar</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" method="post" action="<?php echo base_url() ?>auth/post_login">
+                        <form role="form" method="post" action="<?php echo base_url() ?>auth/post_register">
                             <fieldset>
                                 <div class="form-group">
                                     <label for="" class="">Username:</label>
                                     <input class="form-control" placeholder="username" name="username" type="username" autofocus>
-                                </div>
-                                <div class="form-group">
-                                    <label for="" class="">Email:</label>
-                                    <input class="form-control" placeholder="email" name="email" type="email" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <label for="">Password:</label>

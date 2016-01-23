@@ -20,14 +20,14 @@
     <!-- DataTables CSS -->
     <link href="<?php echo base_url(); ?>asset/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
 
-    <!-- DataTables Responsive CSS -->
-    <link href="<?php echo base_url(); ?>asset/bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="<?php echo base_url(); ?>asset/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="<?php echo base_url(); ?>asset/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <script src="<?php echo base_url(); ?>asset/bower_components/jquery/dist/jquery.min.js"></script>
+    
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,6 +56,7 @@
             <!-- /.navbar-header -->
 
             <ul class="nav navbar-top-links navbar-right">
+                <li><a href="<?php echo base_url() ?>barang/laporan_transaksi "><i class="fa fa-sign-out fa-fw"></i> Laporan</a></li>
 				<li><a href="<?php echo base_url() ?>auth/logout "><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
             </ul>
             <!-- /.navbar-top-links -->
@@ -63,11 +64,26 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            gambar
+                        <li>
+                            <a href="<?php echo base_url() ?>barang/list_barang"><i class="fa fa-edit fa-fw"></i> Tabel Stok Barang</a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url() ?>kode_perkiraan/index"><i class="fa fa-edit fa-fw"></i> Input Perkiraan</a>
+                            <a href="<?php echo base_url() ?>barang/masuk"><i class="fa fa-edit fa-fw"></i> Barang Masuk</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url() ?>barang/keluar"><i class="fa fa-edit fa-fw"></i> Barang Keluar</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url() ?>pelanggan/input"><i class="fa fa-edit fa-fw"></i> Input Pelanggan</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url() ?>pelanggan/list_pelanggan"><i class="fa fa-edit fa-fw"></i> List Pelanggan</a>
+                        </li>
+                        <li>
+                            <a href="<?php echo base_url() ?>anggota_kelompok/index"><i class="fa fa-edit fa-fw"></i> Anggota Kelompok</a>
+                        </li>
+                        <li class="sidebar-search">
+                            <img src="<?php echo base_url() ?>asset/logo.jpeg" width="100%" alt="">
                         </li>
                     </ul>
                 </div>

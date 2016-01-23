@@ -3,12 +3,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Model_init extends CI_Model {
 
-	public function view($view='', $title='', $isiData='')
+	public function view($view='', $title='', $isiData='', $isiData2='')
 	{
 		# code...
 		$data['title'] = $title;
 		if($isiData !== ''){
 			$data['arrayData'] = $this->queryBanyakHasil($isiData);
+		}
+		if ($isiData2 !== '') {
+			$data['arrayData2'] = $this->queryBanyakHasil($isiData2);
 		}
 		$this->load->view('_layout/header', $data);
 		$this->load->view($view, $data);
