@@ -5,7 +5,7 @@ Aplikasi dibuat menggunakan Codeigniter yang tidak begitu menjalankan fungsi MVC
 
 Dan juga saat mengembangkan aplikasi ini saya sedang fokus pengbangan APlikasi Arsip dan Pulsa Proyek Indarung VI dengan Laravel.
 
-##cara menjalankan aplikasi:
+##Cara menjalankan aplikasi:
 1. buat database dengan nama "tugas_akhir_sia"
 2. import data tugas_akhir_sia.sql ke database
 3. Ubah settingan databse pada config/database.php 
