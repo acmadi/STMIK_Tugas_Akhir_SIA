@@ -8,7 +8,9 @@ Dan juga saat mengembangkan aplikasi ini saya sedang fokus pengbangan APlikasi A
 ##cara menjalankan aplikasi:
 1. buat database dengan nama "tugas_akhir_sia"
 2. import data tugas_akhir_sia.sql ke database
-3. akses file dengan alamat http://localhost/sia
+3. Ubah settingan databse pada config/database.php 
+	set username dan Password database dan pilih database yang dipalai "ugas_akhir_sia"
+4. akses file dengan alamat http://localhost/sia
 
 ##Angggota Kelompok:
 1. DIKY MITZA PRATAMA	151200043
