@@ -10,12 +10,12 @@ Dan juga saat mengembangkan aplikasi ini saya sedang fokus pengbangan APlikasi A
 2. import data tugas_akhir_sia.sql ke database
 3. akses file dengan alamat http://localhost/sia
 
-##Angggota Kelompom:
-DIKY MITZA PRATAMA		151200043
-DWINTA AMORA			151200066
-FAJAR ARIF SETIAWAN		151200072
-MARSALINA				151200077
-WANDRI EKA PUTRA		151200073
+##Angggota Kelompok:
+1. DIKY MITZA PRATAMA	151200043
+2. DWINTA AMORA			151200066
+3. FAJAR ARIF SETIAWAN	151200072
+4. MARSALINA			151200077
+5. WANDRI EKA PUTRA		151200073
 
 
 
