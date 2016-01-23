@@ -10,6 +10,7 @@ Dan juga saat mengembangkan aplikasi ini saya sedang fokus pengbangan APlikasi A
 2. import data tugas_akhir_sia.sql ke database
 3. Ubah settingan databse pada config/database.php 
 	set username dan Password database dan pilih database yang dipalai "ugas_akhir_sia"
+4. Rubah config['base_url'] pada file config/config.php dan sesuaikan dengan folder root yang dipakai, apabila download dari github ini maka nama foldernya adalah 'STMIK_Tugas_Akhir_SIA-master' dan akses dengan alamat "http://localhost/STMIK_Tugas_Akhir_SIA-master/"
 4. akses file dengan alamat http://localhost/sia
 
 ##Angggota Kelompok:
